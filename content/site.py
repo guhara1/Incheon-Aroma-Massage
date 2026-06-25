@@ -9,6 +9,13 @@ PHONE_DISPLAY = "0508-202-4719"
 # 외부 문의 채널 (텔레그램)
 TELEGRAM_URL = "https://t.me/googleseolab"
 
+# 검색엔진 사이트 소유확인 (네이버 서치어드바이저)
+NAVER_VERIFY = "c68a9ad285c5785a70e19ec084af2d1c2c1c1ad3"
+
+# IndexNow 키 (빙·네이버·얀덱스 즉시 색인 통보용)
+# 루트에 {INDEXNOW_KEY}.txt 파일로도 노출된다.
+INDEXNOW_KEY = "2d17a2fed9a9b22641a37a457f60eb1f"
+
 # 헤더/푸터 공통 문구
 HOME_URL = "/"
 TAGLINE = "인천 전지역 방문 관리"

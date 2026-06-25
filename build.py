@@ -7,6 +7,7 @@ content/ 패키지의 페이지 정의를 읽어 정적 HTML을 생성한다.
   - 본문 텍스트 2,000자 미만 페이지는 robots noindex 처리
   - sitemap.xml 에는 index 허용 페이지만 포함
 """
+import datetime
 import html
 import json
 import os
@@ -19,7 +20,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from content import PAGES
 from content.site import (BASE_URL, BRAND, NAV, PHONE, PHONE_DISPLAY,
                          TELEGRAM_URL, HOME_URL, TAGLINE, SERVICE_AREA,
-                         FOOTER_DESC, FOOTER_SERVICE, FOOTER_INFO)
+                         FOOTER_DESC, FOOTER_SERVICE, FOOTER_INFO,
+                         NAVER_VERIFY, INDEXNOW_KEY)
 from content._helpers import (PRICING_BLOCK, build_reviews, render_related,
                               _LONGTAIL_INTENT, _seedint)
 
@@ -334,6 +336,8 @@ def render_page(page: dict) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="naver-site-verification" content="{NAVER_VERIFY}">
+<link rel="alternate" type="application/rss+xml" title="{BRAND} 인천 출장마사지 안내" href="{BASE_URL.rstrip('/')}/rss.xml">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 {robots}
@@ -435,6 +439,7 @@ def render_page(page: dict) -> str:
 def build() -> None:
     report = []
     sitemap_urls = []
+    feed_items = []
 
     # 롱테일 관련 링크 인덱스 구축 (구·군별 페이지 그룹)
     _PAGE_META.clear()
@@ -462,26 +467,68 @@ def build() -> None:
         chars = text_length(page["body"])
         noindex = page.get("noindex", False) or chars < MIN_INDEX_CHARS
         if not noindex:
-            sitemap_urls.append(BASE_URL.rstrip("/") + "/" + path)
+            url = BASE_URL.rstrip("/") + "/" + path
+            sitemap_urls.append(url)
+            feed_items.append((url, page["title"], page["desc"]))
         report.append((path or "/", chars, "noindex" if noindex else "index"))
 
-    # sitemap.xml
-    urls = "\n".join(
-        f"  <url><loc>{u}</loc></url>" for u in sitemap_urls
-    )
+    base = BASE_URL.rstrip("/")
+    today = datetime.date.today().isoformat()
+    now_rfc822 = datetime.datetime.now(datetime.timezone.utc).strftime(
+        "%a, %d %b %Y %H:%M:%S +0000")
+
+    # sitemap.xml (lastmod·changefreq·priority 포함 — 색인 속도 도움)
+    rows = []
+    for u in sitemap_urls:
+        pr = "1.0" if u == base + "/" else "0.8"
+        rows.append(
+            f"  <url><loc>{u}</loc><lastmod>{today}</lastmod>"
+            f"<changefreq>weekly</changefreq><priority>{pr}</priority></url>"
+        )
     with open(os.path.join(PUBLIC_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(
             '<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            f"{urls}\n</urlset>\n"
+            + "\n".join(rows) + "\n</urlset>\n"
         )
 
-    # robots.txt
+    # rss.xml (네이버 서치어드바이저 RSS 제출·색인 발견용)
+    items = []
+    for u, t, d in feed_items:
+        items.append(
+            "    <item>\n"
+            f"      <title>{html.escape(t)}</title>\n"
+            f"      <link>{u}</link>\n"
+            f"      <guid isPermaLink=\"true\">{u}</guid>\n"
+            f"      <description>{html.escape(d)}</description>\n"
+            f"      <pubDate>{now_rfc822}</pubDate>\n"
+            "    </item>"
+        )
+    with open(os.path.join(PUBLIC_DIR, "rss.xml"), "w", encoding="utf-8") as f:
+        f.write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+            '  <channel>\n'
+            f'    <title>{html.escape(BRAND)} 인천 출장마사지·홈타이 지역 안내</title>\n'
+            f'    <link>{base}/</link>\n'
+            f'    <atom:link href="{base}/rss.xml" rel="self" type="application/rss+xml" />\n'
+            '    <description>인천 전지역 방문 관리(출장마사지·홈타이) 지역·역세권·생활권 안내</description>\n'
+            '    <language>ko</language>\n'
+            f'    <lastBuildDate>{now_rfc822}</lastBuildDate>\n'
+            + "\n".join(items) + "\n  </channel>\n</rss>\n"
+        )
+
+    # robots.txt (모든 봇 허용 + sitemap·rss 명시)
     with open(os.path.join(PUBLIC_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(
             "User-agent: *\nAllow: /\n\n"
-            f"Sitemap: {BASE_URL.rstrip('/')}/sitemap.xml\n"
+            f"Sitemap: {base}/sitemap.xml\n"
+            f"Sitemap: {base}/rss.xml\n"
         )
+
+    # IndexNow 키 파일 (루트에 노출 — 빙·네이버·얀덱스 소유확인)
+    with open(os.path.join(PUBLIC_DIR, INDEXNOW_KEY + ".txt"), "w", encoding="utf-8") as f:
+        f.write(INDEXNOW_KEY + "\n")
 
     # .nojekyll (GitHub Pages)
     open(os.path.join(PUBLIC_DIR, ".nojekyll"), "w").close()
