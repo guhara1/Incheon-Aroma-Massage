@@ -41,6 +41,23 @@ JUNG_GU = page(
 </section>
 
 <section>
+  <h2>중구 행정동별 방문 가능 지역</h2>
+  <p>중구는 원도심 내륙권과 영종권으로 나뉘는 만큼, 행정동을 기준으로 자신의 위치가 어느 생활권에 속하는지 확인하면 안내가 빨라집니다. 아래는 중구의 행정동을 대표 동 기준으로 정리한 것으로, 숫자로 나뉜 동(영종1동 등)은 대표 동으로 묶어 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/jung-gu/dongincheon-area/">신포동 원도심 방문 가능 지역</a></li>
+    <li><a href="/incheon/jung-gu/dongincheon-area/">동인천동 생활권 안내</a></li>
+    <li><a href="/incheon/jung-gu/dongincheon-area/">개항동 방문 가능 지역</a></li>
+    <li><a href="/incheon/station/dongincheon-station/">신흥동 인근 역 안내</a></li>
+    <li><a href="/incheon/jung-gu/">도원동 방문 안내</a></li>
+    <li><a href="/incheon/jung-gu/">율목동 방문 안내</a></li>
+    <li><a href="/incheon/jung-gu/">연안동 방문 안내</a></li>
+    <li><a href="/incheon/jung-gu/yeongjong-area/">영종동 생활권 안내</a></li>
+    <li><a href="/incheon/station/unseo-station/">운서동 인근 역 안내</a></li>
+    <li><a href="/incheon/jung-gu/yeongjong-area/">용유동 방문 가능 지역</a></li>
+  </ul>
+</section>
+
+<section>
   <h2>중구 출장마사지 예약 전 확인사항</h2>
   <p>중구는 원도심과 영종권의 거리 차이가 커서 예약 전 확인이 특히 중요합니다. 다음 항목을 미리 정리해 두면 통화가 짧아집니다.</p>
   <ul>
@@ -101,6 +118,19 @@ DONG_GU = page(
 </section>
 
 <section>
+  <h2>동구 행정동별 방문 가능 지역</h2>
+  <p>동구는 면적이 작은 원도심 생활권이라 행정동이 촘촘히 붙어 있습니다. 아래는 동구의 행정동을 대표 동 기준으로 정리한 것으로, 인접한 동인천 생활권 및 동구 페이지와 연결해 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/dong-gu/">만석동 방문 가능 지역</a></li>
+    <li><a href="/incheon/dong-gu/">화수동 방문 안내</a></li>
+    <li><a href="/incheon/dong-gu/">화평동 방문 안내</a></li>
+    <li><a href="/incheon/station/dongincheon-station/">송현동 인근 역 안내</a></li>
+    <li><a href="/incheon/dong-gu/">송림동 생활권 안내</a></li>
+    <li><a href="/incheon/jung-gu/dongincheon-area/">금창동 원도심 생활권</a></li>
+  </ul>
+</section>
+
+<section>
   <h2>동구 출장마사지 예약 전 확인사항</h2>
   <p>원도심 생활권이 많은 동구는 건물 유형과 출입 방식이 다양해 다음 항목을 먼저 정리해 두면 좋습니다.</p>
   <ul>
@@ -152,6 +182,20 @@ MICHUHOL_GU = page(
   <h2>미추홀구 생활권별 건물 유형과 도착 동선</h2>
   <p>미추홀구는 인천에서 가장 오래된 도심 중 하나라 같은 구 안에서도 건물 유형이 폭넓게 섞여 있습니다. 주안역·제물포역 주변은 상가와 오피스텔, 노후 다세대가 함께 있는 역세권이라 도착 시 건물 입구와 호수를 정확히 정하는 것이 중요합니다. 용현동은 인하대학교 주변으로 원룸·고시텔이 많아 공동현관 비밀번호나 출입 방식을 미리 확인해 두면 도착 동선이 단순해집니다. 학익동은 법조타운과 함께 신축 아파트가 들어선 정비 구역이라 단지 경비 출입 절차가 있는 경우가 많습니다.</p>
   <p>문학동·관교동은 문학경기장과 인천종합터미널이 가까운 생활권으로, 행사나 경기가 있는 날에는 인근 도로가 혼잡해질 수 있습니다. 그래서 문학경기장역 인근 방문은 시간대에 따라 도착 시간을 넉넉히 잡는 것이 좋습니다. 숭의동은 동구·중구 원도심과 경계를 이루어, 위치에 따라 인접 구 생활권 안내가 더 가까울 수 있으므로 정확한 주소로 어느 생활권에 속하는지 먼저 확인하시는 것을 권합니다.</p>
+</section>
+
+<section>
+  <h2>미추홀구 행정동별 방문 가능 지역</h2>
+  <p>미추홀구는 경인선과 인천 1호선이 교차하는 중심부라 행정동마다 가까운 역이 다릅니다. 아래는 미추홀구의 행정동을 대표 동 기준으로 정리한 것으로, 숫자로 나뉜 동은 대표 동으로 묶어 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/michuhol-gu/juan-dong/">주안동 예약 안내</a></li>
+    <li><a href="/incheon/life/juan-dohwa/">도화동 생활권 안내</a></li>
+    <li><a href="/incheon/station/juan-station/">숭의동 인근 역 안내</a></li>
+    <li><a href="/incheon/michuhol-gu/">용현동 방문 가능 지역</a></li>
+    <li><a href="/incheon/michuhol-gu/">학익동 방문 안내</a></li>
+    <li><a href="/incheon/michuhol-gu/">관교동 방문 안내</a></li>
+    <li><a href="/incheon/michuhol-gu/">문학동 방문 안내</a></li>
+  </ul>
 </section>
 
 <section>
@@ -209,6 +253,19 @@ YEONSU_GU = page(
 </section>
 
 <section>
+  <h2>연수구 행정동별 방문 가능 지역</h2>
+  <p>연수구는 송도국제도시와 기존 연수·동춘 주거권이 함께 있어 행정동에 따라 성격이 뚜렷이 다릅니다. 아래는 연수구의 행정동을 대표 동 기준으로 정리한 것으로, 숫자로 나뉜 송도동 등은 대표 동으로 묶어 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/yeonsu-gu/songdo/">송도동 방문 가능 지역</a></li>
+    <li><a href="/incheon/station/woninjae-station/">연수동 인근 역 안내</a></li>
+    <li><a href="/incheon/station/woninjae-station/">동춘동 인근 역 안내</a></li>
+    <li><a href="/incheon/yeonsu-gu/">옥련동 방문 안내</a></li>
+    <li><a href="/incheon/yeonsu-gu/">청학동 방문 안내</a></li>
+    <li><a href="/incheon/yeonsu-gu/">선학동 방문 안내</a></li>
+  </ul>
+</section>
+
+<section>
   <h2>연수구 출장마사지 예약 전 확인사항</h2>
   <p>신축 고층 단지와 기존 주거권이 함께 있어 건물 출입 절차가 다양한 만큼, 다음 항목을 미리 정리해 두면 좋습니다.</p>
   <ul>
@@ -260,6 +317,21 @@ NAMDONG_GU = page(
   <h2>구월동 상권과 남부 신도시권의 도착 동선 차이</h2>
   <p>남동구는 인천 최대 상권과 신도시 주거권이 한 구에 함께 있어, 위치에 따라 도착 동선이 크게 다릅니다. 구월동 로데오거리와 인천종합터미널 일대는 인천에서도 유동 인구와 차량 통행이 많은 곳이라, 혼잡 시간대에는 도착 시간을 넉넉히 잡는 것이 좋습니다. 이 일대는 상가 건물 안에 사무실·오피스텔이 섞여 있는 경우가 많아, 방문 주소가 상가 몇 층인지와 엘리베이터·출입구 위치를 미리 정해 두면 도착이 매끄럽습니다. 간석오거리역 주변 간석동은 주거와 상권이 섞인 생활권으로 비교적 동선이 단순합니다.</p>
   <p>남부의 논현지구·서창지구는 비교적 최근에 조성된 신도시형 단지라 도로와 단지 배치가 정돈되어 있습니다. 다만 소래포구·호구포 방향이나 서창 외곽처럼 구 중심에서 떨어진 위치는 이동 거리가 늘어 도착 시간이 더 걸릴 수 있습니다. 만수동은 인천대공원과 가까운 대규모 주거권으로, 단지 규모가 큰 만큼 동·호 정보를 정확히 알려주시면 도착 동선을 빠르게 잡을 수 있습니다. 자신의 위치가 구월 중심권인지 남부 신도시권인지 먼저 확인하는 것이 예약의 출발점입니다.</p>
+</section>
+
+<section>
+  <h2>남동구 행정동별 방문 가능 지역</h2>
+  <p>남동구는 인천시청이 위치한 행정·상권 중심권과 논현·서창 남부 신도시권으로 나뉩니다. 아래는 남동구의 행정동을 대표 동 기준으로 정리한 것으로, 숫자로 나뉜 동은 대표 동으로 묶어 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/namdong-gu/guwol-dong/">구월동 예약 안내</a></li>
+    <li><a href="/incheon/station/incheon-cityhall-station/">간석동 생활권</a></li>
+    <li><a href="/incheon/namdong-gu/">만수동 방문 가능 지역</a></li>
+    <li><a href="/incheon/namdong-gu/nonhyeon-dong/">논현동 생활권 안내</a></li>
+    <li><a href="/incheon/namdong-gu/nonhyeon-dong/">고잔동 방문 안내</a></li>
+    <li><a href="/incheon/namdong-gu/">서창동 방문 안내</a></li>
+    <li><a href="/incheon/namdong-gu/">장수동 방문 안내</a></li>
+    <li><a href="/incheon/namdong-gu/">남촌도림동 방문 안내</a></li>
+  </ul>
 </section>
 
 <section>
@@ -317,6 +389,21 @@ BUPYEONG_GU = page(
 </section>
 
 <section>
+  <h2>부평구 행정동별 방문 가능 지역</h2>
+  <p>부평구는 부평역 환승 상권과 삼산·산곡·청천 주거권으로 이루어져 있습니다. 아래는 부평구의 행정동을 대표 동 기준으로 정리한 것으로, 숫자로 나뉜 부평동 등은 대표 동으로 묶어 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/bupyeong-gu/bupyeong-dong/">부평동 생활권 안내</a></li>
+    <li><a href="/incheon/life/bupyeong-station-market/">부개동 생활권</a></li>
+    <li><a href="/incheon/bupyeong-gu/">산곡동 방문 가능 지역</a></li>
+    <li><a href="/incheon/bupyeong-gu/">청천동 방문 안내</a></li>
+    <li><a href="/incheon/bupyeong-gu/">갈산동 방문 안내</a></li>
+    <li><a href="/incheon/bupyeong-gu/">삼산동 방문 안내</a></li>
+    <li><a href="/incheon/bupyeong-gu/">일신동 방문 안내</a></li>
+    <li><a href="/incheon/bupyeong-gu/">십정동 방문 안내</a></li>
+  </ul>
+</section>
+
+<section>
   <h2>부평구 출장마사지 예약 전 확인사항</h2>
   <p>역세권 상권과 대규모 주거권이 함께 있는 부평구는 건물 밀집도가 높아 다음 항목을 먼저 확인하면 좋습니다.</p>
   <ul>
@@ -368,6 +455,23 @@ GYEYANG_GU = page(
   <h2>계양구 기존 주거권과 계양신도시의 도착 동선 차이</h2>
   <p>계양구는 화려한 상권보다 생활 밀착형 주거권이 중심이라, 방문 동선이 비교적 단순한 편입니다. 계산동·작전동의 기존 단지는 중층 아파트와 다세대 주택이 섞여 있어 공동현관 구조가 단순한 경우가 많고, 경인교대입구역·계산역·작전역을 기준으로 위치를 잡으면 도착 동선이 명확합니다. 효성동·용종동은 부평 경계와 가까운 주거권으로, 위치에 따라 인접 부평구 생활권이 더 가까울 수 있어 정확한 주소 확인이 필요합니다.</p>
   <p>북부 귤현동·박촌동 일대는 계양신도시 개발이 진행되며 신축 단지가 새로 들어서고 있습니다. 신축 단지는 경비실 확인이나 자동문 출입 절차가 있어, 예약 시 단지명과 동·호 정보를 미리 알려주시면 도착이 매끄럽습니다. 계양산 자락의 임학동은 임학공원과 가까운 조용한 주거권으로 골목 단위 동선이 섞여 있어, 정확한 건물 입구 위치를 함께 정해 두는 것이 좋습니다. 같은 계양구라도 기존 주거권과 신도시권은 출입 절차가 다르므로 건물 유형을 먼저 확인하시기 바랍니다.</p>
+</section>
+
+<section>
+  <h2>계양구 행정동별 방문 가능 지역</h2>
+  <p>계양구는 계산·작전 중심권과 계양역·귤현·박촌 북부권으로 나뉩니다. 아래는 계양구의 행정동을 대표 동 기준으로 정리한 것으로, 숫자로 나뉜 동은 대표 동으로 묶어 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/gyeyang-gu/gyesan-dong/">계산동 생활권 안내</a></li>
+    <li><a href="/incheon/gyeyang-gu/">작전동 방문 가능 지역</a></li>
+    <li><a href="/incheon/gyeyang-gu/">효성동 방문 안내</a></li>
+    <li><a href="/incheon/gyeyang-gu/">서운동 방문 안내</a></li>
+    <li><a href="/incheon/gyeyang-gu/">임학동 방문 안내</a></li>
+    <li><a href="/incheon/gyeyang-gu/">용종동 방문 안내</a></li>
+    <li><a href="/incheon/gyeyang-gu/">병방동 방문 안내</a></li>
+    <li><a href="/incheon/station/gyeyang-station/">계양동 인근 역 안내</a></li>
+    <li><a href="/incheon/station/gyeyang-station/">박촌동 인근 역 안내</a></li>
+    <li><a href="/incheon/station/gyeyang-station/">귤현동 인근 역 안내</a></li>
+  </ul>
 </section>
 
 <section>
@@ -430,6 +534,22 @@ SEO_GU = page(
 </section>
 
 <section>
+  <h2>서구 행정동별 방문 가능 지역</h2>
+  <p>서구는 청라·가정·석남 남부권과 검암·검단·마전 북부권으로 나뉘는 넓은 구입니다. 아래는 서구의 행정동을 대표 동 기준으로 정리한 것으로, 검암경서동·신현원창동처럼 통합된 동과 숫자로 나뉜 동은 대표 동으로 묶어 안내합니다.</p>
+  <ul>
+    <li><a href="/incheon/seo-gu/cheongna/">청라동 생활권 안내</a></li>
+    <li><a href="/incheon/seo-gu/geomdan-area/">검단동 생활권 안내</a></li>
+    <li><a href="/incheon/seo-gu/geomdan-area/">아라동 방문 가능 지역</a></li>
+    <li><a href="/incheon/station/geomam-station/">검암경서동 인근 역 안내</a></li>
+    <li><a href="/incheon/station/seongnam-station/">석남동 인근 역 안내</a></li>
+    <li><a href="/incheon/seo-gu/">가정동 방문 안내</a></li>
+    <li><a href="/incheon/seo-gu/">연희동 방문 안내</a></li>
+    <li><a href="/incheon/seo-gu/">신현원창동 방문 안내</a></li>
+    <li><a href="/incheon/seo-gu/">가좌동 방문 안내</a></li>
+  </ul>
+</section>
+
+<section>
   <h2>서구 출장마사지 예약 전 확인사항</h2>
   <p>신도시가 여러 개 묶인 넓은 구인 만큼, 위치와 이동 거리 확인이 특히 중요합니다.</p>
   <ul>
@@ -489,6 +609,16 @@ GANGHWA_GUN = page(
 </section>
 
 <section>
+  <h2>강화군 읍·면별 방문 가능 지역</h2>
+  <p>강화군은 사전 확인형 지역이라 읍·면 단위는 별도 페이지 없이 안내합니다. 아래는 강화군의 행정 읍·면을 정리한 것으로, 면 단위는 도어웨이 방지를 위해 텍스트 위주로 안내하며 방문 가능 여부 확인은 강화군 페이지와 이용 전 확인사항으로 연결합니다.</p>
+  <p>본섬 권역은 <strong>강화읍, 선원면, 불은면, 길상면, 화도면, 양도면, 내가면, 하점면, 양사면, 송해면</strong>이 있고, 부속 도서 권역은 <strong>교동면, 삼산면, 서도면</strong>이 있습니다. 강화읍 시내와 외곽 면, 부속 섬은 이동 조건이 크게 다르므로 정확한 면 위치를 먼저 확인하시기 바랍니다.</p>
+  <ul>
+    <li><a href="/incheon/ganghwa-gun/">강화읍·본섬 면 지역 방문 가능 여부 안내</a></li>
+    <li><a href="/incheon/check/">교동·삼산·서도 등 부속 섬 사전 확인 안내</a></li>
+  </ul>
+</section>
+
+<section>
   <h2>강화군 출장마사지 예약 전 확인사항</h2>
   <p>강화군은 사전 확인이 곧 예약의 핵심입니다. 다음 항목을 먼저 정리한 뒤 통화하시면 안내가 빠릅니다.</p>
   <ul>
@@ -545,6 +675,16 @@ ONGJIN_GUN = page(
   <h2>옹진군 섬별 연결 방식과 운항 일정 확인</h2>
   <p>옹진군 방문 안내는 섬별 연결 방식을 이해하는 데서 출발합니다. 영흥면은 선재대교와 영흥대교를 통해 차량으로 들어갈 수 있어 옹진군 중에서는 접근이 가장 수월한 섬으로, 십리포해변·장경리해변 일대 펜션과 주거지가 있습니다. 북도면의 신도·시도·모도는 인근 영종도에서 배편으로 짧게 연결되는 섬이고, 자월면의 자월도·승봉도·이작도와 덕적면의 덕적도는 인천이나 대부도 방향에서 여객선으로 들어가는 섬입니다. 이런 섬들은 하루 운항 횟수가 정해져 있어 도착과 복귀 시간을 함께 계획해야 합니다.</p>
   <p>백령도·대청도·소청도와 연평도는 서해 북단의 먼 섬으로, 여객선이 하루 한두 차례만 운항하고 풍랑이나 안개로 결항되는 경우가 적지 않습니다. 따라서 이 지역은 단순 예약이 아니라 운항 일정과 기상, 체류 일정을 함께 확인해야 방문 가능 여부를 판단할 수 있습니다. 옹진군처럼 도서 지역이 흩어진 곳은 정확한 섬 이름과 방문 주소, 희망 날짜를 먼저 알려주시면 이동 가능 시간과 추가 비용을 함께 안내해 드릴 수 있습니다. 모든 섬은 사전 예약 기준으로만 운영됩니다.</p>
+</section>
+
+<section>
+  <h2>옹진군 면별 방문 가능 지역</h2>
+  <p>옹진군은 도서 지역 사전 확인형이라 면 단위는 별도 페이지 없이 안내합니다. 아래는 옹진군의 행정 면을 정리한 것으로, 섬 단위는 도어웨이 방지를 위해 텍스트 위주로 안내하며 방문 가능 여부 확인은 옹진군 페이지와 이용 전 확인사항으로 연결합니다.</p>
+  <p>다리로 연결되는 권역은 <strong>영흥면</strong>이 있고, 배편으로 연결되는 권역은 <strong>북도면, 자월면, 덕적면</strong>이 있으며, 서해 북단 먼 섬 권역은 <strong>백령면, 대청면, 연평면</strong>이 있습니다. 같은 옹진군이라도 영흥도와 백령도는 이동 난이도가 전혀 다르므로 정확한 섬 위치를 먼저 확인하시기 바랍니다.</p>
+  <ul>
+    <li><a href="/incheon/ongjin-gun/">영흥·북도·자월·덕적 방문 가능 여부 안내</a></li>
+    <li><a href="/incheon/check/">백령·대청·연평 등 먼 섬 사전 확인 안내</a></li>
+  </ul>
 </section>
 
 <section>

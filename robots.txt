@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://incheon-massage1.pages.dev/sitemap.xml
+Sitemap: https://incheon-aroma-massage.pages.dev/sitemap.xml

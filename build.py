@@ -294,7 +294,7 @@ def render_page(page: dict) -> str:
     # 공통 컴포넌트 주입 (루트 리다이렉트 제외). TOC 생성 이후에 붙여 목차 비노출.
     topic = short_label(title)
     reviews_schema_ld = ""
-    if path != "":
+    if not page.get("redirect"):
         if not page.get("no_pricing"):
             body = body + "\n" + PRICING_BLOCK
         # 이용 후기(평점) — 색인 가능한 일반 페이지에만 노출/마크업

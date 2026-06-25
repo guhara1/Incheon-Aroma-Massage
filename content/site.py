@@ -1,6 +1,6 @@
 # 인천시 출장마사지 사이트 공통 설정
 
-BASE_URL = "https://incheon-massage1.pages.dev"
+BASE_URL = "https://incheon-aroma-massage.pages.dev"
 
 BRAND = "바로 GO"
 PHONE = "0508-202-4719"
@@ -10,7 +10,7 @@ PHONE_DISPLAY = "0508-202-4719"
 TELEGRAM_URL = "https://t.me/googleseolab"
 
 # 헤더/푸터 공통 문구
-HOME_URL = "/incheon/"
+HOME_URL = "/"
 TAGLINE = "인천 전지역 방문 관리"
 SERVICE_AREA = "인천광역시 전지역"
 FOOTER_DESC = (
@@ -20,7 +20,7 @@ FOOTER_DESC = (
 
 # 푸터 — 서비스 안내 링크
 FOOTER_SERVICE = [
-    ("인천 출장마사지", "/incheon/"),
+    ("인천 출장마사지", "/"),
     ("구·군별 안내", "/incheon/yeonsu-gu/"),
     ("지역별 안내", "/incheon/yeonsu-gu/songdo/"),
     ("역세권 안내", "/incheon/station/bupyeong-station/"),
@@ -36,7 +36,7 @@ FOOTER_INFO = [
 
 # 상단 메뉴 — 키워드 반복 없음, 지역명·역명만 표시
 NAV = [
-    ("인천 홈", "/incheon/", []),
+    ("인천 홈", "/", []),
     ("구·군별 안내", "/incheon/yeonsu-gu/", [
         ("중구", "/incheon/jung-gu/"),
         ("동구", "/incheon/dong-gu/"),

@@ -1,11 +1,14 @@
-# 루트 페이지 (index.html) — 인천 메인으로 리다이렉트
+# /incheon/ → 루트(/) 리다이렉트
+# 메인을 도메인 루트(/)로 옮겼으므로, 기존 /incheon/ 경로로 들어오는
+# 내부·외부 링크가 깨지지 않도록 루트로 보낸다. (색인 제외)
 
 PAGE = {
-    "path": "",  # 루트
+    "path": "incheon/",
     "title": "인천 출장마사지｜송도·부평·구월·청라 홈타이 지역 안내",
     "desc": "인천 출장마사지·홈타이 예약 전 송도, 부평, 구월, 청라, 검단, 영종, 주안 생활권을 확인하세요.",
     "h1": "인천 출장마사지",
     "breadcrumb": [],
-    "body": '<meta http-equiv="refresh" content="0;url=/incheon/" /><p>인천 출장마사지 안내 페이지로 이동합니다. 자동으로 이동하지 않으면 <a href="/incheon/">여기를 클릭</a>하세요.</p>',
-    "noindex": True,  # 리다이렉트 페이지는 색인 제외
+    "body": '<meta http-equiv="refresh" content="0;url=/" /><p>인천 출장마사지 안내 페이지로 이동합니다. 자동으로 이동하지 않으면 <a href="/">여기를 클릭</a>하세요.</p>',
+    "noindex": True,
+    "redirect": True,
 }

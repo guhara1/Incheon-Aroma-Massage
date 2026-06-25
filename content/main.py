@@ -2,7 +2,7 @@ import json
 from .site import BRAND, BASE_URL, PHONE
 
 _BASE = BASE_URL.rstrip("/")
-_HOME = _BASE + "/incheon/"
+_HOME = _BASE + "/"
 
 # 메타 설명 (80자 이내)
 DESC = "인천 출장마사지·홈타이 예약 전 송도, 부평, 구월, 청라, 검단, 영종, 주안 생활권을 확인하세요."
@@ -89,9 +89,9 @@ _EXTRA_HEAD = "\n".join(
 
 _HERO = """<div class="hero">
   <div class="hero-content">
-    <div class="hero-badge">인천 전지역 방문 관리</div>
-    <h1 class="hero-title">인천 출장마사지<br><span class="hero-accent">인천 홈타이</span><br>지역별 예약 안내</h1>
-    <p class="hero-lead">송도, 부평, 구월, 청라, 검단, 영종, 주안 등 인천 주요 생활권별 방문 가능 지역과 예약 전 확인사항을 안내합니다.</p>
+    <div class="hero-badge">전지역 방문 관리 · 24시간 예약 상담</div>
+    <h1 class="hero-title">인천 출장마사지<br><span class="hero-accent">홈타이</span><br>우리 동네 방문 예약 가이드</h1>
+    <p class="hero-lead">송도·부평·구월·청라·검단·영종·주안 등 주요 생활권을 골라 방문 가능 지역과 예약 전 확인사항을 바로 확인하세요.</p>
     <div class="hero-cta">
       <a href="#districts" class="btn btn-primary">구·군별 안내</a>
       <a href="#areas" class="btn btn-secondary">지역별 안내</a>
@@ -109,10 +109,10 @@ _HERO = """<div class="hero">
 </div>"""
 
 PAGE = {
-    "path": "incheon/",
+    "path": "",
     "title": "인천 출장마사지｜송도·부평·구월·청라 홈타이 지역 안내",
     "desc": DESC,
-    "h1": "인천 출장마사지·홈타이 지역별 예약 안내",
+    "h1": "인천 출장마사지·홈타이 생활권별 방문 예약 가이드",
     "hero": _HERO,
     "breadcrumb": [],
     "extra_head": _EXTRA_HEAD,
