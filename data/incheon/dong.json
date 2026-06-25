@@ -1,0 +1,186 @@
+[
+  {
+    "name": "송도",
+    "slug": "songdo",
+    "type": "dong",
+    "currentDistrict": "연수구",
+    "futureDistrict": "연수구",
+    "nearbyStations": [
+      "인천대입구역",
+      "송도달빛축제공원역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/yeonsu-gu/songdo/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "구월동",
+    "slug": "guwol-dong",
+    "type": "dong",
+    "currentDistrict": "남동구",
+    "futureDistrict": "남동구",
+    "nearbyStations": [
+      "인천시청역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/namdong-gu/guwol-dong/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "부평동",
+    "slug": "bupyeong-dong",
+    "type": "dong",
+    "currentDistrict": "부평구",
+    "futureDistrict": "부평구",
+    "nearbyStations": [
+      "부평역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/bupyeong-gu/bupyeong-dong/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "주안동",
+    "slug": "juan-dong",
+    "type": "dong",
+    "currentDistrict": "미추홀구",
+    "futureDistrict": "미추홀구",
+    "nearbyStations": [
+      "주안역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/michuhol-gu/juan-dong/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "청라",
+    "slug": "cheongna",
+    "type": "dong",
+    "currentDistrict": "서구",
+    "futureDistrict": "서해구",
+    "nearbyStations": [
+      "청라국제도시역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/seo-gu/cheongna/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "검단",
+    "slug": "geomdan-area",
+    "type": "dong",
+    "currentDistrict": "서구",
+    "futureDistrict": "검단구",
+    "nearbyStations": [
+      "검단사거리역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/seo-gu/geomdan-area/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "영종",
+    "slug": "yeongjong-area",
+    "type": "dong",
+    "currentDistrict": "중구",
+    "futureDistrict": "영종구",
+    "nearbyStations": [
+      "운서역",
+      "인천공항1터미널역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/jung-gu/yeongjong-area/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "논현동",
+    "slug": "nonhyeon-dong",
+    "type": "dong",
+    "currentDistrict": "남동구",
+    "futureDistrict": "남동구",
+    "nearbyStations": [
+      "인천논현역",
+      "소래포구역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/namdong-gu/nonhyeon-dong/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "계산동",
+    "slug": "gyesan-dong",
+    "type": "dong",
+    "currentDistrict": "계양구",
+    "futureDistrict": "계양구",
+    "nearbyStations": [
+      "계산역",
+      "계양역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/gyeyang-gu/gyesan-dong/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "동인천",
+    "slug": "dongincheon-area",
+    "type": "dong",
+    "currentDistrict": "중구",
+    "futureDistrict": "제물포구",
+    "nearbyStations": [
+      "동인천역"
+    ],
+    "nearbyAreas": [],
+    "contentFocus": "지역 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/jung-gu/dongincheon-area/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  }
+]

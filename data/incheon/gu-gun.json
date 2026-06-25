@@ -1,0 +1,244 @@
+[
+  {
+    "name": "중구",
+    "slug": "jung-gu",
+    "type": "gu-gun",
+    "currentDistrict": "중구",
+    "futureDistrict": "제물포구/영종구",
+    "nearbyStations": [
+      "동인천역",
+      "운서역",
+      "인천공항1터미널역"
+    ],
+    "nearbyAreas": [
+      "동인천",
+      "영종",
+      "운서",
+      "인천공항"
+    ],
+    "contentFocus": "동인천 내륙권과 영종·공항권 분리",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/jung-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "동구",
+    "slug": "dong-gu",
+    "type": "gu-gun",
+    "currentDistrict": "동구",
+    "futureDistrict": "제물포구",
+    "nearbyStations": [
+      "동인천역",
+      "도원역"
+    ],
+    "nearbyAreas": [
+      "송림",
+      "송현",
+      "화수"
+    ],
+    "contentFocus": "송림·송현 동인천 인접 생활권",
+    "indexPriority": 2,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/dong-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "미추홀구",
+    "slug": "michuhol-gu",
+    "type": "gu-gun",
+    "currentDistrict": "미추홀구",
+    "futureDistrict": "미추홀구",
+    "nearbyStations": [
+      "주안역",
+      "제물포역",
+      "인하대역"
+    ],
+    "nearbyAreas": [
+      "주안",
+      "도화",
+      "용현",
+      "학익"
+    ],
+    "contentFocus": "주안·도화 역세권 중심",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/michuhol-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "연수구",
+    "slug": "yeonsu-gu",
+    "type": "gu-gun",
+    "currentDistrict": "연수구",
+    "futureDistrict": "연수구",
+    "nearbyStations": [
+      "인천대입구역",
+      "원인재역",
+      "송도달빛축제공원역"
+    ],
+    "nearbyAreas": [
+      "송도",
+      "연수",
+      "동춘",
+      "청학"
+    ],
+    "contentFocus": "송도국제도시·연수 주거권",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/yeonsu-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "남동구",
+    "slug": "namdong-gu",
+    "type": "gu-gun",
+    "currentDistrict": "남동구",
+    "futureDistrict": "남동구",
+    "nearbyStations": [
+      "인천시청역",
+      "인천논현역",
+      "소래포구역"
+    ],
+    "nearbyAreas": [
+      "구월",
+      "간석",
+      "논현",
+      "소래"
+    ],
+    "contentFocus": "구월·인천시청 행정·상권",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/namdong-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "부평구",
+    "slug": "bupyeong-gu",
+    "type": "gu-gun",
+    "currentDistrict": "부평구",
+    "futureDistrict": "부평구",
+    "nearbyStations": [
+      "부평역",
+      "부평구청역",
+      "동암역"
+    ],
+    "nearbyAreas": [
+      "부평",
+      "부개",
+      "삼산",
+      "산곡"
+    ],
+    "contentFocus": "부평역 환승 역세권",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/bupyeong-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "계양구",
+    "slug": "gyeyang-gu",
+    "type": "gu-gun",
+    "currentDistrict": "계양구",
+    "futureDistrict": "계양구",
+    "nearbyStations": [
+      "계양역",
+      "계산역",
+      "작전역"
+    ],
+    "nearbyAreas": [
+      "계산",
+      "작전",
+      "효성",
+      "계양"
+    ],
+    "contentFocus": "계산·작전 주거권",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/gyeyang-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "서구",
+    "slug": "seo-gu",
+    "type": "gu-gun",
+    "currentDistrict": "서구",
+    "futureDistrict": "서해구/검단구",
+    "nearbyStations": [
+      "청라국제도시역",
+      "검암역",
+      "검단사거리역",
+      "석남역"
+    ],
+    "nearbyAreas": [
+      "청라",
+      "검단",
+      "검암",
+      "루원",
+      "석남"
+    ],
+    "contentFocus": "청라·검단 신도시권 분리",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/seo-gu/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "강화군",
+    "slug": "ganghwa-gun",
+    "type": "gu-gun",
+    "currentDistrict": "강화군",
+    "futureDistrict": "강화군",
+    "nearbyStations": [],
+    "nearbyAreas": [
+      "강화읍",
+      "길상",
+      "화도",
+      "교동"
+    ],
+    "contentFocus": "사전 확인형 차량 이동권",
+    "indexPriority": 2,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/ganghwa-gun/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "옹진군",
+    "slug": "ongjin-gun",
+    "type": "gu-gun",
+    "currentDistrict": "옹진군",
+    "futureDistrict": "옹진군",
+    "nearbyStations": [],
+    "nearbyAreas": [
+      "영흥",
+      "자월",
+      "백령",
+      "대청"
+    ],
+    "contentFocus": "도서 지역 사전 예약 안내",
+    "indexPriority": 2,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/ongjin-gun/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  }
+]

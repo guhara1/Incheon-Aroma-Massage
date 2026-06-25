@@ -1,0 +1,232 @@
+[
+  {
+    "name": "부평역",
+    "slug": "bupyeong-station",
+    "type": "station",
+    "lines": [
+      "수도권1호선",
+      "인천1호선"
+    ],
+    "currentDistrict": "부평구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/bupyeong-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "주안역",
+    "slug": "juan-station",
+    "type": "station",
+    "lines": [
+      "수도권1호선"
+    ],
+    "currentDistrict": "미추홀구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/juan-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "인천시청역",
+    "slug": "incheon-cityhall-station",
+    "type": "station",
+    "lines": [
+      "인천1호선",
+      "인천2호선"
+    ],
+    "currentDistrict": "남동구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/incheon-cityhall-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "송도달빛축제공원역",
+    "slug": "songdo-moonlight-festival-park-station",
+    "type": "station",
+    "lines": [
+      "인천1호선"
+    ],
+    "currentDistrict": "연수구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/songdo-moonlight-festival-park-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "인천대입구역",
+    "slug": "incheon-national-univ-station",
+    "type": "station",
+    "lines": [
+      "인천1호선"
+    ],
+    "currentDistrict": "연수구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/incheon-national-univ-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "원인재역",
+    "slug": "woninjae-station",
+    "type": "station",
+    "lines": [
+      "인천1호선",
+      "수인분당선"
+    ],
+    "currentDistrict": "연수구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/woninjae-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "계양역",
+    "slug": "gyeyang-station",
+    "type": "station",
+    "lines": [
+      "인천1호선",
+      "공항철도"
+    ],
+    "currentDistrict": "계양구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/gyeyang-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "검암역",
+    "slug": "geomam-station",
+    "type": "station",
+    "lines": [
+      "공항철도",
+      "인천2호선"
+    ],
+    "currentDistrict": "서구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/geomam-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "청라국제도시역",
+    "slug": "cheongna-international-city-station",
+    "type": "station",
+    "lines": [
+      "공항철도"
+    ],
+    "currentDistrict": "서구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/cheongna-international-city-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "검단사거리역",
+    "slug": "geomdan-sageori-station",
+    "type": "station",
+    "lines": [
+      "인천2호선"
+    ],
+    "currentDistrict": "서구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/geomdan-sageori-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "석남역",
+    "slug": "seongnam-station",
+    "type": "station",
+    "lines": [
+      "인천2호선",
+      "서울7호선"
+    ],
+    "currentDistrict": "서구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/seongnam-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "동인천역",
+    "slug": "dongincheon-station",
+    "type": "station",
+    "lines": [
+      "수도권1호선"
+    ],
+    "currentDistrict": "중구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/dongincheon-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "운서역",
+    "slug": "unseo-station",
+    "type": "station",
+    "lines": [
+      "공항철도"
+    ],
+    "currentDistrict": "중구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/unseo-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  },
+  {
+    "name": "인천공항1터미널역",
+    "slug": "incheon-airport-terminal-1-station",
+    "type": "station",
+    "lines": [
+      "공항철도"
+    ],
+    "currentDistrict": "중구",
+    "contentFocus": "역세권 인접 생활권 안내",
+    "indexPriority": 1,
+    "contentStatus": "ready",
+    "canonicalUrl": "https://incheon-massage1.pages.dev/incheon/station/incheon-airport-terminal-1-station/",
+    "redirectTarget": null,
+    "noindex": false,
+    "lastUpdated": "2026-06-25"
+  }
+]

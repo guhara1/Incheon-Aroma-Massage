@@ -1,0 +1,32 @@
+[
+  {
+    "name": "수도권 전철 1호선",
+    "slug": "line-1",
+    "operator": "한국철도공사"
+  },
+  {
+    "name": "인천 도시철도 1호선",
+    "slug": "incheon-line-1",
+    "operator": "인천교통공사"
+  },
+  {
+    "name": "인천 도시철도 2호선",
+    "slug": "incheon-line-2",
+    "operator": "인천교통공사"
+  },
+  {
+    "name": "수인분당선",
+    "slug": "suin-bundang",
+    "operator": "한국철도공사"
+  },
+  {
+    "name": "인천국제공항철도",
+    "slug": "airport-railroad",
+    "operator": "공항철도"
+  },
+  {
+    "name": "서울 지하철 7호선",
+    "slug": "seoul-line-7",
+    "operator": "서울교통공사"
+  }
+]
