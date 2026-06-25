@@ -46,7 +46,7 @@ _faq_schema = {
 _webpage_schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "인천 출장마사지｜송도·부평·구월·청라 홈타이 지역 안내",
+    "name": "인천 출장마사지｜송도·부평·구월·청라 홈타이 생활권 예약 안내",
     "description": DESC,
     "url": _HOME,
     "inLanguage": "ko",
@@ -110,7 +110,7 @@ _HERO = """<div class="hero">
 
 PAGE = {
     "path": "",
-    "title": "인천 출장마사지｜송도·부평·구월·청라 홈타이 지역 안내",
+    "title": "인천 출장마사지｜송도·부평·구월·청라 홈타이 생활권 예약 안내",
     "desc": DESC,
     "h1": "인천 출장마사지·홈타이 생활권별 방문 예약 가이드",
     "hero": _HERO,
