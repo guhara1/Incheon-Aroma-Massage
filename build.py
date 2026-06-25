@@ -20,7 +20,90 @@ from content import PAGES
 from content.site import (BASE_URL, BRAND, NAV, PHONE, PHONE_DISPLAY,
                          TELEGRAM_URL, HOME_URL, TAGLINE, SERVICE_AREA,
                          FOOTER_DESC, FOOTER_SERVICE, FOOTER_INFO)
-from content._helpers import PRICING_BLOCK
+from content._helpers import (PRICING_BLOCK, build_reviews, render_related,
+                              _LONGTAIL_INTENT, _seedint)
+
+# 페이지를 구·군으로 분류하기 위한 맵 (롱테일 관련 링크 생성용)
+GU_KO = {
+    "jung-gu": "중구", "dong-gu": "동구", "michuhol-gu": "미추홀구",
+    "yeonsu-gu": "연수구", "namdong-gu": "남동구", "bupyeong-gu": "부평구",
+    "gyeyang-gu": "계양구", "seo-gu": "서구", "ganghwa-gun": "강화군",
+    "ongjin-gun": "옹진군",
+}
+STATION_GU = {
+    "bupyeong-station": "bupyeong-gu", "juan-station": "michuhol-gu",
+    "incheon-cityhall-station": "namdong-gu",
+    "songdo-moonlight-festival-park-station": "yeonsu-gu",
+    "incheon-national-univ-station": "yeonsu-gu", "woninjae-station": "yeonsu-gu",
+    "gyeyang-station": "gyeyang-gu", "geomam-station": "seo-gu",
+    "cheongna-international-city-station": "seo-gu",
+    "geomdan-sageori-station": "seo-gu", "seongnam-station": "seo-gu",
+    "dongincheon-station": "jung-gu", "unseo-station": "jung-gu",
+    "incheon-airport-terminal-1-station": "jung-gu",
+}
+LIFE_GU = {
+    "songdo-international-city": "yeonsu-gu", "guwol-incheon-cityhall": "namdong-gu",
+    "bupyeong-station-market": "bupyeong-gu", "juan-dohwa": "michuhol-gu",
+    "cheongna-international-city": "seo-gu", "geomdan-newtown": "seo-gu",
+    "yeongjong-unseo": "jung-gu", "incheon-airport": "jung-gu",
+}
+# 구·군이 없는 페이지(메인·정보)용 대표 허브 링크
+PILLAR_PATHS = [
+    "incheon/yeonsu-gu/songdo/", "incheon/namdong-gu/guwol-dong/",
+    "incheon/bupyeong-gu/bupyeong-dong/", "incheon/seo-gu/cheongna/",
+    "incheon/seo-gu/geomdan-area/", "incheon/jung-gu/yeongjong-area/",
+]
+# 롱테일 관련 링크 인덱스 (build() 에서 채움)
+_PAGE_META = {}
+_BY_GU = {}
+
+
+def short_label(title: str) -> str:
+    """타이틀에서 짧은 지역/주제 라벨 추출."""
+    t = title.split("｜")[0].strip()
+    return t.replace(" 출장마사지", "").strip()
+
+
+def page_gu(path: str):
+    parts = path.strip("/").split("/")
+    if len(parts) < 2:
+        return None
+    seg = parts[1]
+    if seg == "station":
+        return STATION_GU.get(parts[2]) if len(parts) > 2 else None
+    if seg == "life":
+        return LIFE_GU.get(parts[2]) if len(parts) > 2 else None
+    if seg in GU_KO:
+        return seg
+    return None
+
+
+def related_items(path: str):
+    """페이지별 롱테일 관련 링크 [(anchor, href), ...] 생성."""
+    meta = _PAGE_META.get(path, {})
+    gu = meta.get("gu")
+    seen = {path}
+    candidates = []
+    if gu and gu in _BY_GU:
+        candidates += [p for p in _BY_GU[gu] if p != path]
+    candidates += [p for p in PILLAR_PATHS if p != path]
+
+    out = []
+    for p in candidates:
+        if len(out) >= 4:
+            break
+        if p in seen or p not in _PAGE_META:
+            continue
+        seen.add(p)
+        label = _PAGE_META[p]["short"]
+        intent = _LONGTAIL_INTENT[_seedint(path + p) % len(_LONGTAIL_INTENT)]
+        out.append((f"{label} {intent}", "/" + p))
+    # 모든 페이지 공통 — 전환 동선(롱테일 앵커)
+    if path != "incheon/reservation/":
+        out.append(("전화 예약 방법·결제·취소 기준 안내", "/incheon/reservation/"))
+    if path != "incheon/check/":
+        out.append(("방문 전 확인사항 전체 점검", "/incheon/check/"))
+    return out
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 # Cloudflare Pages가 빌드를 실행하지 않고 저장소 루트를 그대로 배포하므로
@@ -208,10 +291,20 @@ def render_page(page: dict) -> str:
     h1_html = "" if hero else f"<h1>{h1}</h1>"
 
     body, toc_items = inject_toc(body)
-    # 공통 마사지 가격표 주입 (루트 리다이렉트·opt-out 페이지 제외).
-    # TOC 생성 이후에 붙여 목차에는 노출되지 않도록 한다.
-    if path != "" and not page.get("no_pricing"):
-        body = body + "\n" + PRICING_BLOCK
+    # 공통 컴포넌트 주입 (루트 리다이렉트 제외). TOC 생성 이후에 붙여 목차 비노출.
+    topic = short_label(title)
+    reviews_schema_ld = ""
+    if path != "":
+        if not page.get("no_pricing"):
+            body = body + "\n" + PRICING_BLOCK
+        # 이용 후기(평점) — 색인 가능한 일반 페이지에만 노출/마크업
+        # (개인정보처리방침 등 no_pricing 페이지·noindex 페이지는 제외)
+        if not noindex and not page.get("no_pricing") and not page.get("no_reviews"):
+            rv_html, rv_schema = build_reviews(topic, path, BASE_URL)
+            body = body + "\n" + rv_html
+            reviews_schema_ld = _ld(rv_schema)
+        # 롱테일 관련 링크
+        body = body + "\n" + render_related(topic, related_items(path))
     toc_html = render_toc(toc_items)
     layout_cls = "page-layout has-toc" if toc_html else "page-layout"
 
@@ -225,6 +318,9 @@ def render_page(page: dict) -> str:
         if crumbs:
             blocks.append(make_breadcrumb_schema(crumbs))
         auto_schema = "".join(_ld(b) for b in blocks)
+
+    # 후기(Service + AggregateRating + Review) 스키마 보강
+    auto_schema = auto_schema + reviews_schema_ld
 
     footer_service_html = "".join(
         f'<li><a href="{h}">{l}</a></li>' for l, h in FOOTER_SERVICE
@@ -339,6 +435,18 @@ def render_page(page: dict) -> str:
 def build() -> None:
     report = []
     sitemap_urls = []
+
+    # 롱테일 관련 링크 인덱스 구축 (구·군별 페이지 그룹)
+    _PAGE_META.clear()
+    _BY_GU.clear()
+    for page in PAGES:
+        p = page["path"]
+        if not p:
+            continue
+        gu = page_gu(p)
+        _PAGE_META[p] = {"short": short_label(page["title"]), "gu": gu}
+        if gu:
+            _BY_GU.setdefault(gu, []).append(p)
 
     # public 디렉터리가 없으면 생성
     os.makedirs(PUBLIC_DIR, exist_ok=True)

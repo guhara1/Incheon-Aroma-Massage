@@ -1096,3 +1096,59 @@ strong {
   .price-card--featured:hover, .price-card:hover { transform: translateY(-3px); }
   .pricing-head h2 { font-size: 1.4rem; }
 }
+
+/* ── 이용 후기(평점) ───────────────────────────── */
+.reviews {
+  margin: 48px 0;
+  padding: 34px 30px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--overlay-glass), linear-gradient(165deg, var(--panel-2), var(--panel) 70%);
+  box-shadow: var(--shadow-soft);
+}
+.rv-head { margin-bottom: 22px; }
+.rv-head h2 {
+  font-family: var(--serif); font-size: 1.45rem; font-weight: 800;
+  color: var(--gold-bright); border: 0; padding: 0; margin: 0 0 10px;
+}
+.rv-agg { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.rv-agg-score { font-family: var(--serif); font-size: 2rem; font-weight: 900; color: var(--gold-soft); }
+.rv-agg-out { color: var(--text-mute); font-size: 1rem; }
+.rv-stars { color: var(--gold); letter-spacing: 2px; }
+.rv-agg-stars { font-size: 1.05rem; }
+.rv-agg-count { color: var(--text-dim); font-size: 0.88rem; }
+.rv-note { margin-top: 8px; color: var(--text-mute); font-size: 0.84rem; line-height: 1.6; }
+.rv-list { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0; padding: 0; }
+.rv-card {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: rgba(255,255,255,0.02); padding: 18px 18px 16px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.rv-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.rv-author { font-weight: 700; color: var(--text); font-size: 0.92rem; }
+.rv-top .rv-stars { font-size: 0.85rem; }
+.rv-score { margin-left: auto; font-weight: 700; color: var(--gold-soft); font-size: 0.86rem; }
+.rv-body { color: var(--text-dim); font-size: 0.9rem; line-height: 1.65; }
+.rv-date { color: var(--text-mute); font-size: 0.78rem; }
+
+/* ── 롱테일 관련 링크 ───────────────────────────── */
+.related {
+  margin: 40px 0 8px;
+  padding: 24px 26px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(120deg, rgba(212,175,106,0.06), transparent 70%), var(--panel);
+}
+.related-title { font-weight: 800; color: var(--gold-soft); margin-bottom: 14px; font-size: 1.02rem; }
+.related-list { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; margin: 0; padding: 0; }
+.related-list li { position: relative; padding-left: 16px; }
+.related-list li::before { content: "›"; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+.related-list a { color: var(--text-dim); font-size: 0.92rem; line-height: 1.5; }
+.related-list a:hover { color: var(--orange-primary); }
+
+@media (max-width: 720px) {
+  .reviews { padding: 24px 16px; }
+  .rv-list { grid-template-columns: 1fr; }
+  .related-list { grid-template-columns: 1fr; }
+}
